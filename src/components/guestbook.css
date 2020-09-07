@@ -1,0 +1,211 @@
+@import url("./fonts/silk-serif-bold/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap");
+
+#guestbook {
+  background-color: #edefed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-title {
+  font-family: "silk_serifbold";
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.note-content {
+  display: flex;
+  flex-direction: row;
+  width: 44vw;
+}
+
+.note-form {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.note-icon {
+  width: 6rem;
+  height: 5rem;
+}
+.note-name {
+  width: 25vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+}
+
+.note-label {
+  font-family: "silk_serifbold";
+  font-size: 1.4rem;
+  margin: 1rem 0.25rem 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.note-label::placeholder{
+  font-style: italic;
+}
+
+.note-label input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: grey;
+}
+
+input,
+textarea ::placeholder {
+  color: grey;
+  font-style: italic;
+}
+
+.note-input {
+  height: 5rem;
+  width: 25vw;
+  border: 0;
+}
+
+.submit-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.submit-note-btn {
+  border: 5px solid white;
+  padding: 4px;
+  cursor: pointer;
+  width: 13vw;
+  margin: 2rem 3rem;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.error-note-msg {
+  color: red;
+}
+
+.success {
+  width: 30vw;
+  height: 5vw;
+  margin: 2rem 0 0 0;
+  background-color: white;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall {
+  width: 70vw;
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+}
+
+.wall-title {
+  font-family: "silk_serifbold";
+  font-size: 1.4rem;
+  width: 77vw;
+}
+
+hr.wall-divider {
+  border: 0.75px solid white;
+  background-color: white;
+}
+
+.wall-column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.wall-note {
+  width: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+.note-date {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.note-message {
+  font-family: "Dawning of a New Day", cursive;
+  font-size: 1.45rem;
+  min-height: 3rem;
+  margin-top: 0.5rem;
+}
+
+hr.note-divider {
+  width: 10%;
+  border: 0.75px solid #434142;
+  background-color: #434142;
+}
+
+.note-signature {
+  font-family: "Dawning of a New Day", cursive;
+  font-size: 1.45rem;
+}
+
+.wall-btn {
+  color: #434142;
+cursor: pointer;
+background-color: transparent;
+border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .submit-note-btn {
+    width: 50vw;
+  }
+  .note-form {
+    width: 80vw;
+  }
+  .note-content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+  }
+  .note-icon {
+    width: 6rem;
+    height: 5rem;
+    box-align: center;
+  }
+
+  .note-name {
+    width: 80vw;
+  }
+  .note-label {
+    width: 80vw;
+  }
+  .note-input {
+    width: 80vw;
+  }
+
+  .success {
+    width: 75vw;
+    height: 15vw;
+  }
+
+  .wall {
+    width: auto;
+  }
+}

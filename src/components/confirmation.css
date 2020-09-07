@@ -1,0 +1,68 @@
+@import url('./fonts/silk-serif-bold/stylesheet.css');
+#confirmar {
+  background-color: #EDEFED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conf-arrow {
+  width: 2rem;
+}
+
+.conf-btn{
+  border: 5px solid white;
+  cursor: pointer;
+  padding: 4px;
+  width: 13vw;
+  margin: 0.5rem;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.conf-btn:hover{
+  background-color: white;
+}
+
+.conf-closed {
+  display: none;
+}
+
+.conf-open {
+  width: 50vw;
+}
+
+.conf-header{
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.conf-title{
+  font-family: 'silk_serifbold';
+  text-align: center;
+}
+
+.conf-text{
+  text-align: center;
+}
+
+.conf-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .conf-header{
+    width: 80vw;
+    margin: 1rem;
+  }
+
+  .conf-btn{
+    width: 50vw;
+  }
+}
